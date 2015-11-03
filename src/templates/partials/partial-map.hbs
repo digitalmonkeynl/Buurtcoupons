@@ -1,0 +1,30 @@
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<!-- GOGGLE MAPS CONFIGURATION -->
+<!-- ref: http://maplacejs.com/ -->
+<script>
+    var gmap_options = {
+        generate_controls : false,
+        locations : [{
+            lat : 52.48577,
+            lon : 4.80365,
+            animation : google.maps.Animation.DROP,
+            //html : "Digital Monkey",
+            icon : "assets/img/marker.png",
+        }],
+        map_options : {
+            scrollwheel : false,
+            mapTypeControl : false,
+            streetViewControl : false,
+            zoomControlOptions : {
+                style : google.maps.ZoomControlStyle.SMALL,
+            },
+            zoom : 15,
+        },
+        styles : {
+
+
+                                // source: https://snazzymaps.com/style/132/light-gray
+                                'custom' : [{"featureType":"road","elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"poi","stylers":[{"visibility":"off"}]},{"featureType":"administrative","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"weight":1}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"weight":0.8}]},{"featureType":"landscape","stylers":[{"color":"#ffffff"}]},{"featureType":"water","stylers":[{"visibility":"off"}]},{"featureType":"transit","stylers":[{"visibility":"off"}]},{"elementType":"labels","stylers":[{"visibility":"off"}]},{"elementType":"labels.text","stylers":[{"visibility":"on"}]},{"elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"}]},{"elementType":"labels.text.fill","stylers":[{"color":"#000000"}]},{"elementType":"labels.icon","stylers":[{"visibility":"on"}]}],
+                            },
+                        };
+                    </script>
