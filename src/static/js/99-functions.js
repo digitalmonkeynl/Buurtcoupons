@@ -1,5 +1,5 @@
 
-$('.item').click(function()
+/*$('.item').click(function()
 {
 	$("body").addClass("body-overflow");
 	$("#coupon-modal").fadeToggle("slow", function(){
@@ -7,7 +7,7 @@ $('.item').click(function()
 			new Maplace( gmap_options ).Load();
 		};
 	});
-}); 
+});
 
 
 $('.coupon-close').click(function()
@@ -15,34 +15,8 @@ $('.coupon-close').click(function()
 	
 	$("#coupon-modal").fadeToggle("slow");
 	$("body").removeClass("body-overflow");
-}); 
-
-
-/// Fancybox ////
-
-
-$(".roan")
-.fancybox({
-	helpers:
-	{
-		overlay:
-		{
-			closeClick: true,
-			css: { 'background': 'rgba(0, 0, 255, 0.5)' },
-			locked: false,
-			
-		}
-	},
-	scrolling   : 'no',
-	padding    : 0,
-	margin     : 0,
-	autoSize	: false,
-	nextEffect : 'fade',
-	prevEffect : 'none',
-	height: '100%',
-	width: '100%',
 });
-
+*/
 
 
 //// Owl Carousel ////
