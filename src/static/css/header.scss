@@ -8,19 +8,22 @@ header{
 
     @media screen and (max-width: 767px){
         height: 50px;
-        background-color: #8C1221;
+        background-color: #402542;
     }
 }
 
 .header-logo{
-    background-color: #8C1221;
+    background-color: #402542;
     color: #fff;
     display: inline-block;
     font-size: 20px;
     font-weight: 700;
     height: 57px;
+    width: 254px;
     line-height: 57px;
     padding: 0px 29px;
+    background: #402542 url(../img/logo.png) no-repeat center center scroll;
+    background-size: 254px;
 
     @media screen and (max-width: 767px){
         height: 50px;
@@ -28,6 +31,7 @@ header{
         font-size: 18px;
         display: block;
         padding: 0px 28px;
+        background-size: 223px;
     }
 }
 

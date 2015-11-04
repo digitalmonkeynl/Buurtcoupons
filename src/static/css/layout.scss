@@ -95,13 +95,16 @@ body{
 	border-radius: 100%;
 	overflow: hidden;
 	text-align: center;
-	color: #fff;
+	color: #402542;
 	text-transform: uppercase;
 	position: absolute;
 	top: 20px;
 	right: 20px;
 	z-index: 2;
 	-webkit-print-color-adjust:exact !important;
+	-webkit-box-shadow:	0px 2px 4px 0px rgba(0,0,0,0.50);
+	-moz-box-shadow:	0px 2px 4px 0px rgba(0,0,0,0.50);
+	box-shadow:			0px 2px 4px 0px rgba(0,0,0,0.50);
 }
 
 
@@ -138,22 +141,29 @@ body{
 
 	&-amount{
 		font-size: 30px;
+		font-weight: 700;
 	}
 	&-text{
 		font-size: 13px;
+		font-weight: 700;
 	}
 }
 
 .coupon-label-text{
 	background-color: $label-color-text;
-	padding-top: 33px;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 1;
+	display: table;
 	-webkit-print-color-adjust:exact !important;
 
 	&-copy{
-		font-size: 19px;
+		font-size: 15px;
+		display: table-cell;
+		padding: 5px;
+		vertical-align: middle;
+		text-transform: none;
+		font-weight: 700;
 	}
 }
 
@@ -167,7 +177,7 @@ body{
 	border-top: 1px solid #EEEEEE;
 
 	& strong{
-		color: #8c1221;
+		color: #402542;
 	}
 }
 
@@ -234,6 +244,7 @@ body{
 }
 .item:hover .coupon-offer-title{
 	text-decoration: underline;
+	color: #402542;
 }
 
 .coupon-locatie{

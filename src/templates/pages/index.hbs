@@ -8,14 +8,14 @@ layout: default.hbs
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-xs-5 col-sm-6 noPadding">
-				<a href="landingspage.html" class="header-logo">Buurtcoupons</a>
+				<a href="landingspage.html" class="header-logo"></a>
 			</div>
 			<div class="col-sm-6 text-right">
 				<ul class="article-social">
 					<li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.digitalmonkey.nl/adcoupons/index.html" target="_blank" class="btn-social btn-social--facebook"><i class="fa fa-facebook"></i><span>delen</span></a></li>
 					<li><a href="https://twitter.com/home?status=http://www.digitalmonkey.nl/adcoupons/" target="_blank" class="btn-social btn-social--twitter" ><i class="fa fa-twitter"></i><span>tweeten</span></a></li>
-					<li><a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//www.digitalmonkey.nl/adcoupons/&title=Profiteer%20nu%20van%20leuke%20kortingen%20in%20de%20buurt&summary=&source=" target="_blank" class="btn-social btn-social--linkedin"><i class="fa fa-linkedin"></i><span>delen</span></a></li>
-					<li><a href="mailto:ontvanger@domein.nl?subject=Profiteer nu van leuke kortingen in de buurt! &body=http://www.digitalmonkey.nl/adcoupons/" class="btn-social btn-social--mail"><i class="fa fa-envelope"></i></a></li>
+					<li class="linkedin"><a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//www.digitalmonkey.nl/adcoupons/&title=Profiteer%20nu%20van%20leuke%20kortingen%20in%20de%20buurt&summary=&source=" target="_blank" class="btn-social btn-social--linkedin"><i class="fa fa-linkedin"></i><span>delen</span></a></li>
+					<li class="mail"><a href="mailto:ontvanger@domein.nl?subject=Profiteer nu van leuke kortingen in de buurt! &body=http://www.digitalmonkey.nl/adcoupons/" class="btn-social btn-social--mail"><i class="fa fa-envelope"></i></a></li>
 				</ul>
 			</div>
 		</div>
@@ -30,12 +30,15 @@ layout: default.hbs
 			</div>
 		</div>
 	</div>
+	<!-- 1-4 coupons -->
 	{{> partial-owl }}
+	<!-- 5-8 coupons -->
 	{{> partial-owl-2 }}
+	<!-- 9-12 coupons -->
 	{{> partial-owl-3 }}
+	<!-- 13-16 coupons -->
 	{{> partial-owl-4}}
+
 </section>
-
 {{> partial-modal }}
-
 {{> partial-footer }}

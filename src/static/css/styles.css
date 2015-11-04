@@ -63,7 +63,7 @@ a {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
-  color: #8C1221;
+  color: #402542;
   line-height: 22px; }
 
 .link-all {
@@ -177,7 +177,9 @@ a {
     margin: 0 2px 0; }
     @media screen and (max-width: 767px) {
       .article-social li {
-        margin: 0; } }
+        margin: 0; }
+        .article-social li.linkedin, .article-social li.mail {
+          display: none; } }
     .article-social li:last-child {
       margin-right: 0px; }
 
@@ -271,24 +273,28 @@ header {
   @media screen and (max-width: 767px) {
     header {
       height: 50px;
-      background-color: #8C1221; } }
+      background-color: #402542; } }
 
 .header-logo {
-  background-color: #8C1221;
+  background-color: #402542;
   color: #fff;
   display: inline-block;
   font-size: 20px;
   font-weight: 700;
   height: 57px;
+  width: 254px;
   line-height: 57px;
-  padding: 0px 29px; }
+  padding: 0px 29px;
+  background: #402542 url(../img/logo.png) no-repeat center center scroll;
+  background-size: 254px; }
   @media screen and (max-width: 767px) {
     .header-logo {
       height: 50px;
       line-height: 50px;
       font-size: 18px;
       display: block;
-      padding: 0px 28px; } }
+      padding: 0px 28px;
+      background-size: 223px; } }
 
 .landing-hero {
   min-height: calc(100% - 57px);
@@ -338,7 +344,7 @@ header {
       margin-bottom: 100px; } }
 
 .footer {
-  background: #8C1221;
+  background: #402542;
   color: #fff;
   padding: 40px 20px 95px; }
   @media screen and (max-width: 767px) {
@@ -513,20 +519,23 @@ body {
 .coupon-label {
   width: 85px;
   height: 85px;
-  background: #1BA970;
-  background-color: #1BA970;
+  background: #FFEE00;
+  background-color: #FFEE00;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
   overflow: hidden;
   text-align: center;
-  color: #fff;
+  color: #402542;
   text-transform: uppercase;
   position: absolute;
   top: 20px;
   right: 20px;
   z-index: 2;
-  -webkit-print-color-adjust: exact !important; }
+  -webkit-print-color-adjust: exact !important;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5); }
 
 .coupon-label-price {
   padding-top: 20px;
@@ -545,26 +554,33 @@ body {
     text-decoration: line-through; }
 
 .coupon-label-discount {
-  background-color: #68358A;
+  background-color: #FFEE00;
   padding-top: 22px;
   font-size: 14px;
   font-weight: 400;
   line-height: 1;
   -webkit-print-color-adjust: exact !important; }
   .coupon-label-discount-amount {
-    font-size: 30px; }
+    font-size: 30px;
+    font-weight: 700; }
   .coupon-label-discount-text {
-    font-size: 13px; }
+    font-size: 13px;
+    font-weight: 700; }
 
 .coupon-label-text {
-  background-color: #B92867;
-  padding-top: 33px;
+  background-color: #FFEE00;
   font-size: 14px;
   font-weight: 400;
   line-height: 1;
+  display: table;
   -webkit-print-color-adjust: exact !important; }
   .coupon-label-text-copy {
-    font-size: 19px; }
+    font-size: 15px;
+    display: table-cell;
+    padding: 5px;
+    vertical-align: middle;
+    text-transform: none;
+    font-weight: 700; }
 
 .coupon-retailer {
   font-weight: 400;
@@ -575,7 +591,7 @@ body {
   padding: 7px 10px 0px;
   border-top: 1px solid #EEEEEE; }
   .coupon-retailer strong {
-    color: #8c1221; }
+    color: #402542; }
 
 .coupon-extra {
   background-color: #afcd09;
@@ -632,7 +648,8 @@ body {
       height: auto; } }
 
 .item:hover .coupon-offer-title {
-  text-decoration: underline; }
+  text-decoration: underline;
+  color: #402542; }
 
 .coupon-locatie {
   text-transform: uppercase;
