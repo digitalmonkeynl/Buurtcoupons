@@ -45,6 +45,19 @@ a{
 	}
 }
 
+.coupon-h3{
+	
+	font-size: 16px;
+	color: $primary-color;
+	padding: 15px 15px 10px;
+	border-bottom: 3px dotted rgba(51,37,116,.05);
+
+	& i{
+		color: $tertiary-color;
+		width: 20px;
+	}
+}
+
 .link-all{
 	text-decoration: none;
 	color: #555;

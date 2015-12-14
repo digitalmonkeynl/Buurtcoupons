@@ -321,7 +321,7 @@ body{
 	background-color: transparent;
 }
 .coupon-modal{
-	background-color: rgba(238,238,238,0.97);
+	background-color: rgba(236,235,241,.98);
 	position: fixed;
 	top: 0px;
 	left: 0;
@@ -339,11 +339,11 @@ body{
 	float: none;
 }
 .coupon-large{
-	-webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.5);
-	-moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.5);
-	box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.5);
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.3);
+	-moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.3);
+	box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.3);
 	background-color: #fff;
-	border: 1px dashed #ccc;
+	border: 3px dotted rgba(51,37,116,.05);
 	margin-bottom: 20px;
 }
 .coupon-large-coupon{
@@ -375,8 +375,8 @@ body{
 .coupon-large-validity{
 	/* Geldig van 18 sep t/: */
 	font-weight: 300;
-	font-size: 16px;
-	color: #434343;
+	font-size: 14px;
+	color: $primary-color;
 	line-height: 18px;
 	margin-bottom: 10px;
 
@@ -386,7 +386,7 @@ body{
 	-ms-transform: scale(1.6,1.6); /* IE 9 */
 	-webkit-transform: scale(1.6,1.6); /* Safari */
 	transform: scale(1.6,1.6);
-	right: 70px;
+	right: 40px;
 	top: calc(40% - 70px);
 
 	@media all and (max-width: 767px){
@@ -459,67 +459,10 @@ body{
 	}
 }
 
-.btn{
 
-	font-weight: 700;
-	padding: 15px;
-	width: 100%;
-	display: block;
-	font-size: 16px;
-	-webkit-transition: all .2s ease-in-out 0s;
-	-moz-transition: all .2s ease-in-out 0s;
-	-o-transition: all .2s ease-in-out 0s;
-	transition: all .2s ease-in-out 0s;
-	-webkit-print-color-adjust:exact !important;
-	print-color-adjust:exact !important;
-
-	&-print{
-		background-color: #1BA970;
-		color: #fff;
-
-		&:hover,&:active,&:focus{
-			color: #fff !important;
-			background-color: #0EB270;
-		}
-	}
-
-	&-facebook{
-		background-color: #F1F1F1;
-		color: #3C5B9A;
-
-		&:hover,&:active,&:focus{
-			color: #fff;
-			background-color: #3C5B9A;
-		}
-		@media all and (max-width: 767px){
-			margin-top:  15px !important;
-		}
-	}
-
-	&-mobile{
-		background-color: #F1F1F1;
-		color: #DD4C38;
-
-		&:hover,&:active,&:focus{
-			color: #fff;
-			background-color: #DD4C38;
-		}
-	}
-
-	
-
-	& span{
-		font-weight: 300;
-	}
-
-	& i{
-		font-size: 20px;
-		margin-right: 5px;
-	}
-}
 
 .small-btns{
-	padding-top: 15px;
+	
 }
 
 .coupon-large-offer{
@@ -535,6 +478,7 @@ body{
 	line-height: 36px;
 	font-weight: 700;
 	color: $link-color;
+	font-family: "Droid Serif";
 	line-height: 1.2;
 	@media all and (max-width: 767px){
 		font-size: 21px;
@@ -548,7 +492,7 @@ body{
 		/* Voorwaarden: */
 		font-weight: 700;
 		font-size: 16px;
-		color: #434343;
+		color: $primary-color;
 		line-height: 18px;
 		margin-bottom: 12px;
 	}
@@ -558,13 +502,12 @@ body{
 		margin: 0 0 0 15px;
 		list-style-position: outside;
 		/* •  Alleen geldig bij: */
-		font-weight: 300;
 		font-size: 16px;
-		color: #1BA970;
+		color: $tertiary-color;
 		line-height: 27px;
 
 		& span{
-			color: #000;
+			color: $primary-color;
 		}
 	}
 }
@@ -652,13 +595,14 @@ body{
 }
 
 .coupon-large-retailer{
-	font-size: 16px;
-	color: #000;
+	font-size: 14px;
+	color: $primary-color;
 	padding: 15px;
-	line-height: 26px;
+	line-height: 19px;
 
-	& span, a{
-		color: #B92867;
+	& a{
+		color: $primary-color;
+		text-decoration: underline;
 	}
 
 	& address{
@@ -677,12 +621,10 @@ body{
 .coupon-large-retailer-map{
 	position: relative;
 	background-color: #fff;
-	border-top: 1px solid #DBDBDB;
-	border-bottom: 1px solid #DBDBDB; 
+	/*border-bottom: 1px solid #DBDBDB;*/
 }
 
 .coupon-large-retailer-name{
-	color: #B92867;
 	font-weight: 700;
 	font-size: 16px;
 }
@@ -731,16 +673,30 @@ body{
 }
 
 .open-list{
-	padding: 15px;
+	padding: 15px 15px 12px;
+	color: $primary-color;
+	font-size: 14px;
 }
 .open-item{
 	list-style-type: none;
+	margin-bottom: 3px;
 }
 .open-day{
 	display: inline-block;
-	width: 100px;
+	width: 50px;
+	font-weight: bold;
 }
 .open-hour{
 	display: inline-block;
-	width: 100px;
+}
+
+.highlight-list{
+	padding: 15px 15px 12px;
+	color: $primary-color;
+	font-size: 14px;
+	margin-left: 15px;
+}
+
+.highlight-item{
+	margin-bottom: 3px;
 }

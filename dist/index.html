@@ -643,14 +643,11 @@
 		<span class="coupon-label-discount-text">korting</span>
 	</div>
 </div>
-									<div class="img-container img-ratio-4-3">
+									<div class="img-container img-ratio-4-2">
 										<img src="assets/img/coupon-product-4.png" alt="">
 									</div>
-								</div>
-								<div class="row coupon-large-offer">
-									<div class="col-xs-10 col-xs-offset-1">
-										<p class="coupon-large-validity">Geldig van <strong>18 sep</strong> t/m <strong>10 okt 2015</strong></p>
-										<h3 class="coupon-large-offer-title">Nieuwe grotematen collectie 43+44</h3>
+									<div class="company-logo">
+										<img src="assets/img/retailer-logo.jpg" alt="" class="img-responsive">
 									</div>
 								</div>
 								<div class="row coupon-large-offer ">
@@ -658,23 +655,41 @@
 										<!--<a href="javascript:window.print()" class="btn btn-print"><i class="fa fa-pdf"></i>Gebruik de coupon </span></a>-->
 										<div class="row small-btns">
 											<div class="col-sm-6 noPaddingRight">
-												<div>
-													Print /bewaar
+												<div class="button-wrapper">
+													<div class="button-menu button-menu--use">
+														<ul class="button-list">
+															<li class="button-item button-item--show"><span><i class="fa fa-eye"></i>Toon aan winkelier</span></li>
+															<li class="button-item button-item--print"><a href="#"><i class="fa fa-print"></i>Print coupon</a></li>
+															<li class="button-item button-item--save"><a href="#"><i class="fa fa-floppy-o"></i>Bewaar coupon</a></li>
+															
+														</ul>
+													</div>
+													<button class="btn btn-print btn-use">Gebruik <span>coupon</span></button>
 												</div>
-												<button class="btn btn-mobile"><i class="fa fa-envelope"></i>Gebruik <span>coupon</span></button>
 											</div>
+
 											<div class="col-sm-6 noPaddingLeft">
-												<div>
-													FB deel coupon
-													Whatsapp deel coupon
-													Mail coupon
-													Kopieer link
+												<div class="button-wrapper">
+													<div class="button-menu button-menu--share">
+														<ul class="button-list">
+															<li class="button-item"><a href="#"><i class="fa fa-facebook"></i>Deel op Facebook</a></li>
+															<li class="button-item button-item--whatsapp"><a href="#"><i class="fa fa-whatsapp"></i>Verstuur via Whatsapp</a></li>
+															<li class="button-item"><a href="#"><i class="fa fa-envelope"></i>Mail coupon</a></li>
+														</ul>
+													</div>
+													<button class="btn btn-share">Deel <span>coupon</span></button>
 												</div>
-												<button class="btn btn-facebook"><i class="fa fa-facebook"></i>Deel <span>coupon</span></button>
 											</div>
 										</div>
 									</div>
 								</div>
+								<div class="row coupon-large-offer">
+									<div class="col-xs-10 col-xs-offset-1">
+										<p class="coupon-large-validity">Geldig van <strong>18 sep</strong> t/m <strong>10 okt 2015</strong></p>
+										<h3 class="coupon-large-offer-title">Gratis bakje tomaatbasilicum of chilikoriander Heks'nkaas</h3>
+									</div>
+								</div>
+								
 								<div class="row coupon-large-conditions">
 									<div class="col-xs-10 col-xs-offset-1">
 										<h4>Voorwaarden</h4>
@@ -690,40 +705,8 @@
 					</div>
 					<div class="col-md-4 extra-info">
 						<div class="coupon-large">
-							<div class="coupon-large-retailer-logo">
-								<img src="assets/img/coupon-logo-vanharen.png" alt="" class="img-responsive">
-							</div>
-							<div class="coupon-large-retailer-map">
-								<div id="gmap"></div>
-								<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-<!-- GOGGLE MAPS CONFIGURATION -->
-<!-- ref: http://maplacejs.com/ -->
-<script>
-	var gmap_options = {
-		generate_controls : false,
-		locations : [{
-			lat : 52.48577,
-			lon : 4.80365,
-			animation : google.maps.Animation.DROP,
-			//html : "Digital Monkey",
-			icon : "assets/img/marker.png",
-		}],
-		map_options : {
-			scrollwheel : false,
-			mapTypeControl : false,
-			streetViewControl : false,
-			zoomControlOptions : {
-				style : google.maps.ZoomControlStyle.SMALL,
-			},
-			zoom : 15,
-		},
-		styles : {
-	// source: https://snazzymaps.com/style/132/light-gray
-	'custom' : [{"featureType":"road","elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"poi","stylers":[{"visibility":"off"}]},{"featureType":"administrative","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"weight":1}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"weight":0.8}]},{"featureType":"landscape","stylers":[{"color":"#ffffff"}]},{"featureType":"water","stylers":[{"visibility":"off"}]},{"featureType":"transit","stylers":[{"visibility":"off"}]},{"elementType":"labels","stylers":[{"visibility":"off"}]},{"elementType":"labels.text","stylers":[{"visibility":"on"}]},{"elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"}]},{"elementType":"labels.text.fill","stylers":[{"color":"#000000"}]},{"elementType":"labels.icon","stylers":[{"visibility":"on"}]}],
-		},
-	};
-</script>
-							</div>
+							<h3 class="coupon-h3"><i class="fa fa-location-arrow"></i> Contact</h3>
+							
 							<div class="coupon-large-retailer">
 								<h2 class="coupon-large-retailer-name">Sauna Swoll</h2>
 								<address class="coupon-large-retailer-address">
@@ -732,29 +715,36 @@
 									<span>T</span> 045 564 75 345<br />
 									<a href="#" target="_blank">www.saunaswoll.nl</a>
 								</address>
-								
+							</div>
+							<div class="coupon-large-retailer-map">
+								<img src="https://maps.googleapis.com/maps/api/staticmap?center52.274438,6.802626&zoom=17&size=400x200&maptype=roadmap&markers=color:red%7Clabel:S%7C52.274438,6.802626&key=AIzaSyDFKF4PIsMOreP2XtaQaPueC25TEAC-fp4" class="img-responsive">
 							</div>
 						</div>
 
 						<div class="coupon-large">
-							Openingstijden
+							<h3 class="coupon-h3"><i class="fa fa-clock-o"></i> Openingstijden</h3>
 							<ul class="open-list">
-								<li class="open-item"><span class="open-day">Ma</span><span class="open-hour">09:00 - 17:00</span></li>
-								<li class="open-item"><span class="open-day">Di</span><span class="open-hour">09:00 - 17:00</span></li>
-								<li class="open-item"><span class="open-day">Wo</span><span class="open-hour">09:00 - 17:00</span></li>
-								<li class="open-item"><span class="open-day">Do</span><span class="open-hour">09:00 - 17:00</span></li>
-								<li class="open-item"><span class="open-day">Vrij</span><span class="open-hour">09:00 - 17:00</span></li>
-								<li class="open-item"><span class="open-day">Za</span><span class="open-hour">09:00 - 17:00</span></li>
-								<li class="open-item"><span class="open-day">Zo</span><span class="open-hour">09:00 - 17:00</span></li>
+								<li class="open-item"><span class="open-day">Ma</span><span class="open-hour">09:00 - 17:00 uur</span></li>
+								<li class="open-item"><span class="open-day">Di</span><span class="open-hour">09:00 - 17:00 uur</span></li>
+								<li class="open-item"><span class="open-day">Wo</span><span class="open-hour">09:00 - 17:00 uur</span></li>
+								<li class="open-item"><span class="open-day">Do</span><span class="open-hour">09:00 - 17:00 uur</span></li>
+								<li class="open-item"><span class="open-day">Vrij</span><span class="open-hour">09:00 - 17:00 uur</span></li>
+								<li class="open-item"><span class="open-day">Za</span><span class="open-hour">Gesloten</span></li>
+								<li class="open-item"><span class="open-day">Zo</span><span class="open-hour">Gesloten</span></li>
 							</ul>
 						</div>
 
 						<div class="coupon-large">
-							Highlights
-							<ul>
-								<li>Dit is een dummy highlight</li>
-								<li>Dit is een dummy highlight</li>
-								<li>Dit is een dummy highlight</li>
+							<h3 class="coupon-h3"><i class="fa fa-envelope"></i> Nieuwsbrief</h3>
+							<div class="coupon-large-retailer">Ontvang automatisch de beste coupons in de buurt</div>
+						</div>
+
+						<div class="coupon-large">
+							<h3 class="coupon-h3"><i class="fa fa-trophy"></i> Highlights</h3>
+							<ul class="highlight-list">
+								<li class="highlight-item">Dit is een dummy highlight</li>
+								<li class="highlight-item">Dit is een dummy highlight</li>
+								<li class="highlight-item">Dit is een dummy highlight</li>
 							</ul>
 						</div>
 

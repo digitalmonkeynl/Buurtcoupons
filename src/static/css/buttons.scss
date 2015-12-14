@@ -85,6 +85,68 @@
 
 }
 
+.btn{
+
+	font-weight: 700;
+	padding: 15px;
+	width: 100%;
+	display: block;
+	font-size: 16px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-transition: all .2s ease-in-out 0s;
+	-moz-transition: all .2s ease-in-out 0s;
+	-o-transition: all .2s ease-in-out 0s;
+	transition: all .2s ease-in-out 0s;
+	-webkit-print-color-adjust:exact !important;
+	print-color-adjust:exact !important;
+
+	&-print{
+		background-color: $tertiary-color;
+		color: #fff;
+
+		&:hover,&:active,&:focus{
+			color: #fff !important;
+			background-color: $tertiary-color;
+		}
+	}
+
+	&-share{
+		background-color: $primary-color;
+		color: #fff;
+
+		&:hover,&:active,&:focus{
+			color: #fff;
+			background-color: $primary-color;
+		}
+		@media all and (max-width: 767px){
+			margin-top:  15px !important;
+		}
+	}
+
+	&-mobile{
+		background-color: #F1F1F1;
+		color: #DD4C38;
+
+		&:hover,&:active,&:focus{
+			color: #fff;
+			background-color: #DD4C38;
+		}
+	}
+
+	
+
+	& span{
+		font-weight: 300;
+	}
+
+	& i{
+		font-size: 20px;
+		margin-right: 5px;
+	}
+}
+
 .coupon-button{
 	border: none;
 	background-color: $primary-color;
@@ -124,7 +186,7 @@
 	bottom: 15px;
 	right: 15px;
 	display: none;
-	background-color: $primary-color;
+	background-color: rgba(51,37,116,.9);
 	color: #fff;
 	text-align: center;
 	-webkit-border-radius: 3px;
@@ -136,6 +198,10 @@
 	-o-transition: all .2s ease-in-out 0s;
 	transition: all .2s ease-in-out 0s;
 
+	@media screen and (max-width: 767px){
+		display: none;
+	}
+
 	&:hover{
 		background-color: $tertiary-color;
 	}
@@ -146,4 +212,81 @@
 		line-height: 38px;
 		
 	}
+}
+
+.button-wrapper{
+	position: relative;
+}
+
+.button-menu{
+	display: none;
+	position: absolute;
+	left: 0px;
+	bottom: 58px;
+	right: 0px;
+	text-align: center;
+	background-color: $tertiary-color;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	z-index: 100;
+
+	&--share{
+		background-color: $primary-color;
+	}
+
+	& ul{
+		list-style-type: none;
+	}
+
+	& li{
+		border-bottom: 3px dotted #fff;
+
+		&:last-child{
+			border-bottom: none;
+		}
+	}
+
+	& a, & span{
+		display: block;
+		padding: 15px;
+		color: #fff;
+		font-size: 14px;
+		font-weight: 700;
+		-webkit-transition: all .2s ease-in-out 0s;
+		-moz-transition: all .2s ease-in-out 0s;
+		-o-transition: all .2s ease-in-out 0s;
+		transition: all .2s ease-in-out 0s;
+
+		&:hover{
+			background-color: rgba(0,0,0,.15);
+		}
+
+		& i{
+			display: inline-block;
+			width: 20px;
+			margin-right: 3px;
+		}
+	}
+
+	& .button-item--show{
+		display: none;
+		background-color: #fff;
+		
+
+		& span{
+			color: $tertiary-color;
+		}
+	}
+
+	& .button-item--whatsapp{
+		background-color: #43d854;
+		display: none;
+	}
+
+	
+}
+
+.btn-use--active, .btn-use--active:hover{
+	background-color: $tertiary-color !important;
 }

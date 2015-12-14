@@ -1,3 +1,8 @@
+// A $( document ).ready() block.
+$( document ).ready(function() {
+    console.log( "ready!" );
+
+
 /*
 $('.item').click(function()
 {
@@ -21,6 +26,28 @@ $('.show-category').click(function()
 {
 	$(".categorie").slideToggle("slow");
 });
+
+$('.btn-use').click(function()
+{
+	$(".button-menu--share").hide();
+	$(".button-menu--use").fadeToggle("fast");
+	$(this).toggleClass("btn-use--active");
+});
+
+$('.btn-share').click(function()
+{
+	$(".button-menu--use").hide();
+	$(".button-menu--share").fadeToggle("fast");
+});
+
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	$(".button-item--whatsapp").show();
+	$(".button-item--show").show();
+	$(".button-item--print").hide();
+	$(".button-item--save").hide();
+}
+
+
 
 //// Owl Carousel ////
 
@@ -196,3 +223,8 @@ $(".back-to-top").click(function(){;
 	);
 	return false;
 });
+
+});
+
+
+
