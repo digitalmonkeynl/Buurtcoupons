@@ -84,3 +84,66 @@
 	}
 
 }
+
+.coupon-button{
+	border: none;
+	background-color: $primary-color;
+	color: #fff;
+	text-align: center;
+	font-weight: 600;
+	padding: 13px 20px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	white-space: nowrap;
+	font-size: 12px;
+	line-height: 1;
+	display: block;
+	margin: 0 auto;
+
+	@media screen and (max-width: 768px){
+		width: 100%;
+	}
+
+	&:hover{
+		background-color: $tertiary-color;
+	}
+
+	&--disabled, &--disabled:hover{
+		background-color: #f6f6f6;
+		cursor: default;
+		color: #8e8e8e;
+	}
+}
+
+.back-to-top{
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	z-index: 100;
+	bottom: 15px;
+	right: 15px;
+	display: none;
+	background-color: $primary-color;
+	color: #fff;
+	text-align: center;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	cursor: pointer;
+	-webkit-transition: all .2s ease-in-out 0s;
+	-moz-transition: all .2s ease-in-out 0s;
+	-o-transition: all .2s ease-in-out 0s;
+	transition: all .2s ease-in-out 0s;
+
+	&:hover{
+		background-color: $tertiary-color;
+	}
+
+	&:before{
+		content: "\f077";
+		font-family: "FontAwesome";
+		line-height: 38px;
+		
+	}
+}

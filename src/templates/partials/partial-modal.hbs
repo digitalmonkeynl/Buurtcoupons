@@ -1,4 +1,4 @@
-<div class="coupon-modal" id="coupon-modal" style="display: none;">
+<div class="coupon-modal" id="coupon-modal" style="display: block;">
 	<div class="coupon-close"><i class="fa fa-times"></i></div>
 	<div class="container">
 		<div class="row">
@@ -7,7 +7,6 @@
 					<div class="col-md-8">
 						<div class="coupon-large">
 							<div class="coupon-large-coupon">
-								<div class="coupon-cut"></div>
 								<div class="coupon-large-graphic">
 									{{> label-discount }}
 									<div class="img-container img-ratio-4-3">
@@ -22,13 +21,22 @@
 								</div>
 								<div class="row coupon-large-offer ">
 									<div class="col-xs-10 col-xs-offset-1">
-										<a href="javascript:window.print()" class="btn btn-print"><i class="fa fa-pdf"></i>Download & Print <span>de coupon</span></a>
+										<!--<a href="javascript:window.print()" class="btn btn-print"><i class="fa fa-pdf"></i>Gebruik de coupon </span></a>-->
 										<div class="row small-btns">
 											<div class="col-sm-6 noPaddingRight">
-												<button class="btn btn-mobile"><i class="fa fa-envelope"></i>Mail <span>mijn de coupon</span></button>
+												<div>
+													Print /bewaar
+												</div>
+												<button class="btn btn-mobile"><i class="fa fa-envelope"></i>Gebruik <span>coupon</span></button>
 											</div>
 											<div class="col-sm-6 noPaddingLeft">
-												<button class="btn btn-facebook"><i class="fa fa-facebook"></i>Deel <span>op facebook</span></button>
+												<div>
+													FB deel coupon
+													Whatsapp deel coupon
+													Mail coupon
+													Kopieer link
+												</div>
+												<button class="btn btn-facebook"><i class="fa fa-facebook"></i>Deel <span>coupon</span></button>
 											</div>
 										</div>
 									</div>
@@ -66,6 +74,29 @@
 								
 							</div>
 						</div>
+
+						<div class="coupon-large">
+							Openingstijden
+							<ul class="open-list">
+								<li class="open-item"><span class="open-day">Ma</span><span class="open-hour">09:00 - 17:00</span></li>
+								<li class="open-item"><span class="open-day">Di</span><span class="open-hour">09:00 - 17:00</span></li>
+								<li class="open-item"><span class="open-day">Wo</span><span class="open-hour">09:00 - 17:00</span></li>
+								<li class="open-item"><span class="open-day">Do</span><span class="open-hour">09:00 - 17:00</span></li>
+								<li class="open-item"><span class="open-day">Vrij</span><span class="open-hour">09:00 - 17:00</span></li>
+								<li class="open-item"><span class="open-day">Za</span><span class="open-hour">09:00 - 17:00</span></li>
+								<li class="open-item"><span class="open-day">Zo</span><span class="open-hour">09:00 - 17:00</span></li>
+							</ul>
+						</div>
+
+						<div class="coupon-large">
+							Highlights
+							<ul>
+								<li>Dit is een dummy highlight</li>
+								<li>Dit is een dummy highlight</li>
+								<li>Dit is een dummy highlight</li>
+							</ul>
+						</div>
+
 					</div>
 				</div>
 			</div>
