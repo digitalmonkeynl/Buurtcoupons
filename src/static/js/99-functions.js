@@ -1,17 +1,10 @@
-// A $( document ).ready() block.
+
 $( document ).ready(function() {
-    console.log( "ready!" );
 
-
-/*
 $('.item').click(function()
 {
 	$("body").addClass("body-overflow");
-	$("#coupon-modal").fadeToggle("slow", function(){
-		if ( typeof Maplace == 'function' && $( '#gmap' ) ) {
-			new Maplace( gmap_options ).Load();
-		};
-	});
+	$("#coupon-modal").fadeToggle("fast");
 });
 
 
@@ -20,7 +13,7 @@ $('.coupon-close').click(function()
 	
 	$("#coupon-modal").fadeToggle("slow");
 	$("body").removeClass("body-overflow");
-});*/
+});
 
 $('.show-category').click(function()
 {

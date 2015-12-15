@@ -1,5 +1,7 @@
 .footer{
     background: $primary-color;
+    background: $primary-color url(../img/bg-footer.png) no-repeat center bottom scroll;
+    background-size: cover;
     color: #fff;
     padding: 40px 20px 95px;
     @media screen and (max-width: 767px){
