@@ -3,6 +3,8 @@ html,body{
     position: relative;
     -webkit-font-smoothing: antialiased !important;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
 }
 
 body{
@@ -29,5 +31,5 @@ a, a:visited, a:active{
 
 /* [data-sr] { 
     visibility: hidden; 
-} */
+    } */
 

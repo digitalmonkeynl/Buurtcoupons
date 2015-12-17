@@ -8,7 +8,10 @@ html, body {
   height: 100%;
   position: relative;
   -webkit-font-smoothing: antialiased !important;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  overflow-y: scroll;
+  /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch; }
 
 body {
   cursor: default; }
@@ -33,7 +36,7 @@ a, a:visited, a:active {
 
 /* [data-sr] { 
     visibility: hidden; 
-} */
+    } */
 body {
   font-family: 'Lato', Arial, sans-serif;
   font-weight: 400;
@@ -63,7 +66,7 @@ a {
   font-weight: 400;
   margin-bottom: 15px;
   font-size: 20px;
-  color: #332574;
+  color: #443784;
   line-height: 22px; }
   .coupon-h2:before {
     display: inline-block;
@@ -75,7 +78,7 @@ a {
 
 .coupon-h3 {
   font-size: 16px;
-  color: #332574;
+  color: #443784;
   padding: 15px 15px 10px;
   border-bottom: 3px dotted rgba(51, 37, 116, 0.05); }
   .coupon-h3 i {
@@ -270,11 +273,11 @@ a {
       color: #fff !important;
       background-color: #48b59f; }
   .btn-share {
-    background-color: #332574;
+    background-color: #443784;
     color: #fff; }
     .btn-share:hover, .btn-share:active, .btn-share:focus {
       color: #fff;
-      background-color: #332574; }
+      background-color: #443784; }
     @media all and (max-width: 767px) {
       .btn-share {
         margin-top: 15px !important; } }
@@ -292,7 +295,7 @@ a {
 
 .coupon-button {
   border: none;
-  background-color: #332574;
+  background-color: #443784;
   color: #fff;
   text-align: center;
   font-weight: 600;
@@ -319,7 +322,7 @@ a {
   width: 40px;
   height: 40px;
   position: fixed;
-  z-index: 100;
+  z-index: 50;
   bottom: 15px;
   right: 15px;
   display: none;
@@ -360,7 +363,7 @@ a {
   border-radius: 5px;
   z-index: 100; }
   .button-menu--share {
-    background-color: #332574; }
+    background-color: #443784; }
   .button-menu ul {
     list-style-type: none; }
   .button-menu li {
@@ -390,7 +393,10 @@ a {
       color: #48b59f; }
   .button-menu .button-item--whatsapp {
     background-color: #43d854;
-    display: none; }
+    display: none !important; }
+    @media all and (max-width: 640px) {
+      .button-menu .button-item--whatsapp {
+        display: block !important; } }
 
 .btn-use--active, .btn-use--active:hover {
   background-color: #48b59f !important; }
@@ -435,8 +441,8 @@ a {
 
 .header {
   height: 100px;
-  background-color: #332574;
-  background: #332574 url(../img/bg-header.png) no-repeat center bottom scroll;
+  background-color: #443784;
+  background: #443784 url(../img/bg-header.png) no-repeat center bottom scroll;
   background-size: cover;
   overflow: hidden;
   /*-webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.2);
@@ -527,7 +533,7 @@ a {
   .categorie-list-link:before {
     display: inline-block;
     font-family: "FontAwesome";
-    color: #332574;
+    color: #443784;
     width: 20px;
     line-height: 1;
     font-weight: normal; }
@@ -596,7 +602,7 @@ a {
       margin-bottom: 100px; } }
 
 .how-to {
-  color: #332574;
+  color: #443784;
   padding: 40px 0;
   font-size: 14px;
   text-align: center;
@@ -623,8 +629,8 @@ a {
         font-size: 20px; } }
 
 .footer {
-  background: #332574;
-  background: #332574 url(../img/bg-footer.png) no-repeat center bottom scroll;
+  background: #443784;
+  background: #443784 url(../img/bg-footer.png) no-repeat center bottom scroll;
   background-size: cover;
   color: #fff;
   padding: 40px 20px 95px; }
@@ -947,7 +953,7 @@ body {
 .coupon-offer-title {
   font-weight: 700;
   font-size: 16px;
-  color: #332574;
+  color: #443784;
   line-height: 20px;
   margin-bottom: 15px;
   overflow: hidden;
@@ -965,7 +971,7 @@ body {
   border-top: 3px dotted rgba(51, 37, 116, 0.05);
   text-align: left;
   padding: 10px 15px;
-  color: #332574; }
+  color: #443784; }
   .coupon-valid--expired {
     color: #8e8e8e; }
 
@@ -1038,7 +1044,7 @@ body {
   /* Geldig van 18 sep t/: */
   font-weight: 300;
   font-size: 14px;
-  color: #332574;
+  color: #443784;
   line-height: 18px;
   margin-bottom: 10px; }
 
@@ -1116,7 +1122,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  color: #332574;
+  color: #443784;
   font-family: "Droid Serif";
   line-height: 1.2; }
   @media all and (max-width: 767px) {
@@ -1129,7 +1135,7 @@ body {
     /* Voorwaarden: */
     font-weight: 700;
     font-size: 16px;
-    color: #332574;
+    color: #443784;
     line-height: 18px;
     margin-bottom: 12px; }
   .coupon-large-conditions ul {
@@ -1141,7 +1147,7 @@ body {
     color: #48b59f;
     line-height: 27px; }
     .coupon-large-conditions ul span {
-      color: #332574; }
+      color: #443784; }
 
 .coupon-large-offer-note {
   font-size: 18px;
@@ -1214,11 +1220,11 @@ body {
 
 .coupon-large-retailer {
   font-size: 14px;
-  color: #332574;
+  color: #443784;
   padding: 15px;
   line-height: 19px; }
   .coupon-large-retailer a {
-    color: #332574;
+    color: #443784;
     text-decoration: underline; }
   .coupon-large-retailer address {
     margin: 0; }
@@ -1275,7 +1281,7 @@ body {
   margin: 1cm; }
 .open-list {
   padding: 15px 15px 12px;
-  color: #332574;
+  color: #443784;
   font-size: 14px; }
 
 .open-item {
@@ -1292,123 +1298,11 @@ body {
 
 .highlight-list {
   padding: 15px 15px 12px;
-  color: #332574;
+  color: #443784;
   font-size: 14px;
   margin-left: 15px; }
 
 .highlight-item {
   margin-bottom: 3px; }
-
-.buurtcoupons-banner {
-  width: 300px;
-  height: 250px;
-  background-color: #fff;
-  overflow: hidden;
-  position: relative; }
-  .buurtcoupons-banner .header {
-    background-color: #402542;
-    height: 40px; }
-    .buurtcoupons-banner .header img {
-      height: 40px;
-      width: auto;
-      margin: 0 auto;
-      display: block; }
-  .buurtcoupons-banner .pay-off {
-    text-align: center;
-    font-weight: bold;
-    color: #402542;
-    font-size: 14px;
-    padding: 12px 0; }
-
-.banner-link {
-  display: block; }
-
-.banner-coupon {
-  border-left: 1px dashed #ccc; }
-
-.banner-logo {
-  padding: 3px 0; }
-
-.banner-img-wrapper {
-  position: relative; }
-
-.banner-title {
-  font-size: 13px;
-  padding: 15px 0 10px;
-  font-weight: bold;
-  color: #000;
-  line-height: 1.2; }
-
-.banner-barcode {
-  background: #fff url(../img/coupon-barcode.png) no-repeat 113px 92px scroll;
-  background-size: 15px;
-  height: 134px;
-  border-left: 1px dashed #ccc; }
-
-.banner-cut {
-  background: transparent url(../img/schaar.png) no-repeat 0 0 scroll;
-  width: 11px;
-  background-size: 11px;
-  height: 20px;
-  position: absolute;
-  z-index: 100;
-  left: -7px;
-  display: none;
-  top: 110px; }
-
-.banner-btnnext {
-  position: absolute;
-  right: 15px;
-  bottom: 5px;
-  background: #FFFFFF;
-  border: 1px solid #DDDDDD;
-  z-index: 10;
-  color: #a7a7a7;
-  width: 20px;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  border-radius: 100%;
-  height: 20px;
-  font-size: 11px;
-  line-height: 18px;
-  text-align: center;
-  cursor: pointer; }
-  .banner-btnnext:hover {
-    color: #fff;
-    background-color: #402542;
-    border-color: #402542; }
-  .banner-btnnext:after {
-    content: "\f054";
-    font-family: "FontAwesome";
-    font-weight: normal; }
-
-.banner-btnprev {
-  position: absolute;
-  left: 15px;
-  bottom: 5px;
-  background: #FFFFFF;
-  border: 1px solid #DDDDDD;
-  z-index: 10;
-  color: #a7a7a7;
-  width: 20px;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  border-radius: 100%;
-  height: 20px;
-  font-size: 11px;
-  line-height: 18px;
-  text-align: center;
-  cursor: pointer; }
-  .banner-btnprev:hover {
-    color: #fff;
-    background-color: #402542;
-    border-color: #402542; }
-  .banner-btnprev:after {
-    content: "\f053";
-    font-family: "FontAwesome";
-    font-weight: normal; }
-
-.owl-item.loading {
-  min-height: 0px !important; }
 
 /*# sourceMappingURL=styles.css.map */

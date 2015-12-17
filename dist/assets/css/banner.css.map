@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,SAAS,CACL,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CAGd,oBAAoB,CAChB,KAAK,CAAE,KAAK,CACZ,MAAM,CAAE,KAAK,CACb,gBAAgB,CAAE,GAAG",
-"sources": ["banner.scss"],
-"names": [],
-"file": "banner.css"
-}
